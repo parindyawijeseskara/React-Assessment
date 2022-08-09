@@ -5,6 +5,7 @@ import { styleSheet} from "./style";
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
 import SnackBar from "../../../components/common/SnackBar";
+import { Link } from 'react-router-dom';
 
 class Login extends Component{
     constructor(props){
@@ -81,10 +82,12 @@ class Login extends Component{
                      variant="outlined" />
                     </div>
                     <div className={classes.btn_container}>
-                    <Button variant="contained"
-                     onClick={() => {
-                       this.checkValidity()
-                    }}>Login</Button>
+                    <Link to="userRegistration">
+                        <Button variant="contained"
+                        onClick={() => {
+                        this.checkValidity()
+                        }}>Login</Button>
+                    </Link>
                     </div>
                </div>
                <SnackBar

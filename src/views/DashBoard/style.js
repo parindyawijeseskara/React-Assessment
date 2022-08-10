@@ -8,7 +8,7 @@ export const styleSheet = {
     },
     title__container: {
         display: 'flex',
-        flexDirection: 'row', 
+        flexDirection: 'row',  
         backgroundColor: '#5F9EA0',
         height: '10%',
         width: '100%',
